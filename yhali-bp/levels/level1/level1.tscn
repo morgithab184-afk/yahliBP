@@ -1,0 +1,28 @@
+[gd_scene format=4 uid="uid://pwsll2at8vi"]
+
+[ext_resource type="PackedScene" uid="uid://eh657cotwny3" path="res://levels/level1/player.tscn" id="1_eq150"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c6lro"]
+load_path = "res://.godot/imported/grass_tx.png-ddbcb0bba8237eabd9ebdf14db9fdb5a.ctex"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ps0pm"]
+texture = SubResource("CompressedTexture2D_c6lro")
+texture_region_size = Vector2i(8, 8)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+
+[sub_resource type="TileSet" id="TileSet_aatsp"]
+tile_size = Vector2i(8, 8)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ps0pm")
+
+[node name="Level1" type="Node2D" unique_id=870646848]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2022062380]
+texture_filter = 1
+scale = Vector2(8, 8)
+tile_map_data = PackedByteArray("AAAAAAkAAAAAAAAAAAABAAkAAAAAAAAAAAACAAkAAAAAAAAAAAADAAkAAAAAAAAAAAAEAAkAAAAAAAAAAAAFAAkAAAAAAAAAAAAGAAkAAAAAAAAAAAAHAAkAAAAAAAAAAAAIAAkAAAAAAAAAAAAJAAkAAAAAAAAAAAAKAAkAAAAAAAAAAAALAAkAAAAAAAAAAAAMAAkAAAAAAAAAAAANAAkAAAAAAAAAAAAOAAkAAAAAAAAAAAAPAAkAAAAAAAAAAAAQAAkAAAAAAAAAAAARAAkAAAAAAAAAAAASAAkAAAAAAAAAAAATAAkAAAAAAAAAAAAUAAkAAAAAAAAAAAAVAAkAAAAAAAAAAAAWAAkAAAAAAAAAAAAXAAkAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_aatsp")
+
+[node name="player" parent="." unique_id=978227935 instance=ExtResource("1_eq150")]
+position = Vector2(652, 52)

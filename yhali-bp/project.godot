@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="yhaliBP"
-run/main_scene="uid://eh657cotwny3"
+run/main_scene="uid://pwsll2at8vi"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
