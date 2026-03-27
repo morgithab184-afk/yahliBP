@@ -15,7 +15,7 @@ public partial class Player : RigidBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		
+		Console.WriteLine("AAAAAAAAAAAAA");
 		if (Input.IsActionPressed("player jump") && IsOnFloor())
 		{
 			ApplyImpulse(Vector2.Up * -jumpForce);
